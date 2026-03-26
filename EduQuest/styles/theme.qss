@@ -1,0 +1,410 @@
+/* ===== EduQuest — Premium Dark RPG Theme ===== */
+
+* {
+    font-family: "Segoe UI", "Cascadia Code", sans-serif;
+    color: #E6EDF3;
+    outline: none;
+}
+
+QMainWindow {
+    background-color: #0B0E14;
+}
+
+QWidget {
+    background-color: #0B0E14;
+}
+
+/* ===== SIDEBAR ===== */
+
+#sidebar {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #12151E, stop:0.5 #0F1219, stop:1 #0A0D14);
+    border-right: 1px solid #1E2433;
+}
+
+#logo {
+    font-size: 26px;
+    font-weight: 900;
+    color: #F6C244;
+    padding: 20px 0;
+    border-bottom: 2px solid qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 transparent, stop:0.2 #F6C244, stop:0.8 #F6C244, stop:1 transparent);
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #181D28, stop:1 #12151E);
+    letter-spacing: 3px;
+}
+
+#navButton {
+    text-align: left;
+    padding: 16px 22px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-left: 3px solid transparent;
+    background-color: transparent;
+    color: #5C6778;
+    margin: 2px 8px;
+    border-radius: 8px;
+}
+
+#navButton:hover {
+    background-color: rgba(246, 194, 68, 0.06);
+    color: #C8D1DC;
+    border-left: 3px solid #5C6778;
+}
+
+#navButton:checked {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 rgba(246, 194, 68, 0.15), stop:1 rgba(246, 194, 68, 0.03));
+    color: #F6C244;
+    border-left: 3px solid #F6C244;
+    font-weight: 700;
+}
+
+#navButtonGold {
+    text-align: left;
+    padding: 16px 22px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-left: 3px solid #A78BFA;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 rgba(167, 139, 250, 0.12), stop:1 transparent);
+    color: #A78BFA;
+    margin: 2px 8px;
+    border-radius: 8px;
+}
+
+#navButtonGold:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 rgba(167, 139, 250, 0.22), stop:1 rgba(167, 139, 250, 0.06));
+    color: #C4B5FD;
+}
+
+#navButtonGold:checked {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 rgba(167, 139, 250, 0.28), stop:1 rgba(167, 139, 250, 0.08));
+    color: #C4B5FD;
+    border-left: 3px solid #C4B5FD;
+    font-weight: 800;
+}
+
+#navButtonBlue {
+    text-align: left;
+    padding: 16px 22px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-left: 3px solid #3B82F6;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 rgba(59, 130, 246, 0.12), stop:1 transparent);
+    color: #3B82F6;
+    margin: 2px 8px;
+    border-radius: 8px;
+}
+
+#navButtonBlue:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 rgba(59, 130, 246, 0.22), stop:1 rgba(59, 130, 246, 0.06));
+    color: #60A5FA;
+}
+
+#navButtonBlue:checked {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+        stop:0 rgba(59, 130, 246, 0.28), stop:1 rgba(59, 130, 246, 0.08));
+    color: #93C5FD;
+    border-left: 3px solid #93C5FD;
+    font-weight: 800;
+}
+
+#duelCard {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #1A0808, stop:1 #180505);
+    border: 2px solid #EF4444;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+/* ===== PAGE TITLES ===== */
+
+#pageTitle {
+    font-size: 28px;
+    font-weight: 800;
+    color: #F6C244;
+    padding-bottom: 6px;
+    letter-spacing: 1px;
+}
+
+/* ===== INPUT FIELDS ===== */
+
+#inputField, QComboBox {
+    background-color: #111620;
+    border: 1px solid #1E2939;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #C8D1DC;
+    selection-background-color: #F6C244;
+    selection-color: #0B0E14;
+}
+
+#inputField:focus, QComboBox:focus {
+    border: 1px solid #F6C244;
+    background-color: #131926;
+}
+
+#inputField:hover, QComboBox:hover {
+    border: 1px solid #2D3B52;
+}
+
+QComboBox::drop-down {
+    border: none;
+    padding-right: 12px;
+    width: 20px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #131926;
+    border: 1px solid #1E2939;
+    border-radius: 8px;
+    padding: 4px;
+    selection-background-color: rgba(246, 194, 68, 0.2);
+    selection-color: #F6C244;
+}
+
+QTextEdit#inputField {
+    border-radius: 10px;
+    padding: 12px 16px;
+}
+
+/* placeholder color */
+#inputField[placeholderText] {
+    color: #3E4A5C;
+}
+
+/* ===== BUTTONS ===== */
+
+#primaryButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #E5A817, stop:0.5 #F6C244, stop:1 #F0D06A);
+    color: #0B0E14;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+}
+
+#primaryButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #F0B620, stop:0.5 #FFD556, stop:1 #FFE17A);
+}
+
+#primaryButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #C28F10, stop:1 #DBA820);
+    padding: 13px 28px 11px 28px;
+}
+
+#primaryButton:disabled {
+    background: #1A1D26;
+    color: #3E4A5C;
+    border: 1px solid #1E2939;
+}
+
+#dangerButton {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #8B1A1A, stop:1 #B32828);
+    color: #FFC4C4;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 10px;
+}
+
+#dangerButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #A02020, stop:1 #CC3333);
+}
+
+#dangerButton:pressed {
+    background: #6E1414;
+}
+
+/* ===== CARDS ===== */
+
+#card {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #131926, stop:1 #101520);
+    border: 1px solid #1E2939;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+#card:hover {
+    border: 1px solid #2D3B52;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #161D2E, stop:1 #111722);
+}
+
+#accentCard {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #1A1608, stop:0.5 #1C1A0E, stop:1 #181510);
+    border: 1px solid rgba(246, 194, 68, 0.35);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+#accentCard:hover {
+    border: 1px solid rgba(246, 194, 68, 0.6);
+}
+
+#cardTitle {
+    font-size: 17px;
+    font-weight: 700;
+    color: #F6C244;
+    padding-bottom: 6px;
+    letter-spacing: 0.3px;
+}
+
+#cardBody {
+    font-size: 14px;
+    color: #A0ABBE;
+    line-height: 1.6;
+}
+
+/* ===== STATUS ===== */
+
+#statusLabel {
+    font-size: 13px;
+    color: #5C6778;
+    padding: 4px 0;
+    font-style: italic;
+}
+
+/* ===== SCROLL AREA ===== */
+
+#resultScroll {
+    border: none;
+    background-color: transparent;
+}
+
+#resultScroll > QWidget > QWidget {
+    background-color: transparent;
+}
+
+QScrollBar:vertical {
+    background-color: #0B0E14;
+    width: 6px;
+    border-radius: 3px;
+    margin: 4px 0;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #1E2939;
+    border-radius: 3px;
+    min-height: 40px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #F6C244;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    height: 0;
+    background: transparent;
+}
+
+QScrollBar:horizontal {
+    height: 0;
+}
+
+/* ===== PROGRESS BAR (Boss HP) ===== */
+
+#hpBar {
+    background-color: #141A24;
+    border: 2px solid #1E2939;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    color: #E6EDF3;
+    min-height: 28px;
+    padding: 1px;
+}
+
+#hpBar::chunk {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 #9B1C1C, stop:0.3 #DC2626, stop:0.7 #EF4444, stop:1 #F87171
+    );
+    border-radius: 10px;
+}
+
+/* ===== STAT BARS (Tavern) ===== */
+
+#statBar {
+    background-color: #141A24;
+    border: 1px solid #1E2939;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #E6EDF3;
+}
+
+#statBar::chunk {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 #7C3AED, stop:0.5 #A78BFA, stop:1 #C4B5FD
+    );
+    border-radius: 7px;
+}
+
+/* ===== VICTORY BANNER ===== */
+
+#victoryLabel {
+    font-size: 30px;
+    font-weight: 900;
+    color: #F6C244;
+    padding: 28px;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #1A1608, stop:0.5 #1F1B0A, stop:1 #181510);
+    border: 2px solid #F6C244;
+    border-radius: 18px;
+    letter-spacing: 1px;
+}
+
+/* ===== THEME TOGGLE ===== */
+
+#themeToggle {
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #1E2939;
+    background-color: #111620;
+    color: #5C6778;
+    margin: 8px 16px;
+    border-radius: 8px;
+}
+
+#themeToggle:hover {
+    background-color: #1A2030;
+    color: #C8D1DC;
+    border: 1px solid #2D3B52;
+}
+
+/* ===== TOOLTIPS ===== */
+
+QToolTip {
+    background-color: #131926;
+    border: 1px solid #F6C244;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 13px;
+    color: #E6EDF3;
+}
